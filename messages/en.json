@@ -1,0 +1,128 @@
+{
+  "common": {
+    "addToCart": "Add to Cart",
+    "cart": "Cart",
+    "checkout": "Checkout",
+    "continueShopping": "Continue Shopping",
+    "delivery": "Delivery",
+    "egp": "EGP",
+    "loading": "Loading...",
+    "payNow": "Pay Now",
+    "quantity": "Quantity",
+    "remove": "Remove",
+    "selectSize": "Select size",
+    "size": "Size",
+    "subtotal": "Subtotal",
+    "total": "Total",
+    "yourCart": "Your Cart"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "contact": "Contact Us",
+    "cart": "Cart",
+    "menu": "Menu",
+    "cartCount": "{count} items",
+    "refundPolicy": "Refund Policy",
+    "privacyPolicy": "Privacy Policy"
+  },
+  "footer": {
+    "tagline": "Your memory is a fragrance",
+    "egyptOnly": "Delivery across Egypt",
+    "deliveryFlatRate": "Flat delivery: {amount} EGP across Egypt",
+    "about": "About Us",
+    "contact": "Contact Us",
+    "refundPolicy": "Refund Policy",
+    "privacyPolicy": "Privacy Policy",
+    "followUs": "Follow us"
+  },
+  "home": {
+    "heroTitle": "Luxury Imitation Fragrances",
+    "heroSubtitle": "Perfectly crafted to match the originals. Choose your size and make it yours.",
+    "sizes": "35ml · 55ml · 110ml",
+    "featured": "Our Fragrances",
+    "bestSellers": "Best Sellers",
+    "newLaunch": "New Launch",
+    "categories": "Categories",
+    "shopByCategory": "Shop by category",
+    "categoryAll": "All",
+    "categoryBestSellers": "Best Sellers",
+    "categoryNewArrivals": "New Arrivals"
+  },
+  "product": {
+    "extrait": "Extrait de Parfum",
+    "perMl": "per ml",
+    "notes": {
+      "vanilla": "Vanilla",
+      "tobacco": "Tobacco",
+      "lemon": "Lemon",
+      "orchid": "Orchid",
+      "oud": "Oud",
+      "amber": "Amber",
+      "rose": "Rose",
+      "saffron": "Saffron",
+      "cedar": "Cedar",
+      "musk": "Musk"
+    }
+  },
+  "cart": {
+    "empty": "Your cart is empty",
+    "emptyHint": "Add perfumes you like to get started."
+  },
+  "checkout": {
+    "title": "Checkout",
+    "deliveryDetails": "Delivery details",
+    "address": "Full address",
+    "addressPlaceholder": "Street, building, floor, apartment",
+    "governorate": "Governorate",
+    "governoratePlaceholder": "Select governorate",
+    "mobile": "Mobile number",
+    "mobilePlaceholder": "e.g. 01XXXXXXXX",
+    "orderSummary": "Order summary",
+    "proceedToPay": "Proceed to Pay with Paymob"
+  },
+  "order": {
+    "successTitle": "Thank you!",
+    "successMessage": "Your order has been placed. We will contact you for delivery.",
+    "cancelTitle": "Payment cancelled",
+    "cancelMessage": "Your order was not completed. You can try again from the cart."
+  },
+  "about": {
+    "title": "About Us",
+    "intro": "Alnaqib Fragrances offers luxury imitation perfumes that perfectly capture the essence of the originals. We believe everyone deserves to enjoy premium scents at accessible prices.",
+    "mission": "Our mission",
+    "missionText": "To bring you high-quality, long-lasting fragrances in multiple sizes (35ml, 55ml, 110ml) to match every need. We deliver across Egypt with care.",
+    "story": "Our story",
+    "storyText": "Born from a passion for fine perfumery, Alnaqib carefully crafts each scent to mirror the originals you love. Your memory is a fragrance—and we're here to make it last."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We'd love to hear from you. Reach out for orders, questions, or support.",
+    "email": "Email",
+    "phone": "Phone",
+    "whatsapp": "WhatsApp",
+    "sendMessage": "Send us a message"
+  },
+  "refundPolicy": {
+    "title": "Refund Policy",
+    "lastUpdated": "Last updated",
+    "intro": "At Alnaqib Fragrances we want you to be satisfied with your purchase.",
+    "eligibility": "Eligibility",
+    "eligibilityText": "Refunds or exchanges may be considered for unopened, unused products within 7 days of delivery. The item must be in original packaging. Contact us with your order details to request a refund.",
+    "process": "Process",
+    "processText": "Once we receive and inspect the product, we will notify you of the approval or rejection of your refund. If approved, your refund will be processed within 7–10 business days to your original payment method.",
+    "delivery": "Damaged or wrong items",
+    "deliveryText": "If you receive a damaged or incorrect item, please contact us immediately with photos. We will arrange a replacement or full refund at no extra cost."
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated",
+    "intro": "Alnaqib Fragrances respects your privacy. This policy describes how we collect and use your information.",
+    "collect": "What we collect",
+    "collectText": "When you place an order we collect: name (if provided), delivery address, governorate, mobile number, and order details. We do not store payment card details; payments are processed securely by Paymob.",
+    "use": "How we use it",
+    "useText": "We use your information only to process orders, arrange delivery, and contact you about your order. We do not sell or share your data with third parties for marketing.",
+    "contact": "Contact",
+    "contactText": "For privacy-related questions, contact us via the Contact Us page."
+  }
+}

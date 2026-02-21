@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-black: #0a0a0a;
+  --brand-gold: #c9a227;
+  --brand-gold-light: #e5c76b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-stone-50 text-stone-900 antialiased dark:bg-brand-black dark:text-stone-100;
+}
+
+/* RTL support for Arabic */
+[dir='rtl'] {
+  font-family: system-ui, sans-serif;
+}
+
+/* Gold gradient text utility */
+.text-gold-gradient {
+  @apply bg-gradient-to-r from-amber-500 via-yellow-600 to-amber-600 bg-clip-text text-transparent dark:from-amber-400 dark:via-yellow-500 dark:to-amber-600;
+}
+
+/* Button gold style */
+.btn-gold {
+  @apply bg-gradient-to-r from-amber-600 to-amber-700 text-black font-semibold shadow-lg shadow-amber-900/30 hover:from-amber-500 hover:to-amber-600 transition-all duration-200;
+}
+
+/* Card hover */
+.card-hover {
+  @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 hover:shadow-amber-900/20 dark:hover:shadow-amber-900/20;
+}
+
+/* Flying note burst (festive confetti-style) */
+@keyframes note-fly {
+  from {
+    transform: translate(-50%, -50%) translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: translate(-50%, -50%) translate(var(--tx), var(--ty)) rotate(var(--rot));
+    opacity: 0;
+  }
+}
+
+.note-burst-particle {
+  position: fixed;
+  width: 28px;
+  height: 28px;
+  pointer-events: none;
+  z-index: 9999;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  background-size: cover;
+  background-position: center;
+  animation: note-fly var(--dur) ease-out var(--delay) forwards;
+}
