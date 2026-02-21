@@ -22,19 +22,30 @@ export async function POST(request: NextRequest) {
     }, 0);
     const totalEgp = subtotalEgp + DELIVERY_FLAT_RATE_EGP;
 
-    const orderItemsInsert = items.map((item: { slug: string; size: number; quantity: number }) => {
-      const product = getProductBySlug(item.slug);
-      if (!product) return null;
-      const price = getPrice(product, item.size as 35 | 55 | 110);
-      return {
-        product_slug: item.slug,
-        product_name_ar: product.nameAr,
-        product_name_en: product.nameEn,
-        size_ml: item.size,
-        quantity: item.quantity,
-        price_egp: price,
-      };
-    }).filter(Boolean);
+    type OrderItemRow = {
+      product_slug: string;
+      product_name_ar: string;
+      product_name_en: string;
+      size_ml: number;
+      quantity: number;
+      price_egp: number;
+    };
+
+    const orderItemsInsert = items
+      .map((item: { slug: string; size: number; quantity: number }): OrderItemRow | null => {
+        const product = getProductBySlug(item.slug);
+        if (!product) return null;
+        const price = getPrice(product, item.size as 35 | 55 | 110);
+        return {
+          product_slug: item.slug,
+          product_name_ar: product.nameAr,
+          product_name_en: product.nameEn,
+          size_ml: item.size,
+          quantity: item.quantity,
+          price_egp: price,
+        };
+      })
+      .filter((row): row is OrderItemRow => row != null);
 
     const { data: order, error: orderError } = await supabaseAdmin
       .from('orders')
@@ -55,7 +66,7 @@ export async function POST(request: NextRequest) {
     }
 
     const { error: itemsError } = await supabaseAdmin.from('order_items').insert(
-      orderItemsInsert.map((row: Record<string, unknown>) => ({ ...row, order_id: order.id }))
+      orderItemsInsert.map((row) => ({ ...row, order_id: order.id }))
     );
     if (itemsError) {
       console.error('Supabase order_items insert error:', itemsError);
