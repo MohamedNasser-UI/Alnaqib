@@ -158,7 +158,7 @@ export async function createPaymentUrl(params: {
 }
 
 /** Verify Paymob callback HMAC and return payload if valid */
-export function verifyPaymobCallback(obj: Record<string, unknown>): {
+export function verifyPaymobCallback(obj: Record<string, any>): {
   success: boolean;
   orderId?: string;
   transactionId?: string;
